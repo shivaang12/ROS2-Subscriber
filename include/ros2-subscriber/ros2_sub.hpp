@@ -52,9 +52,10 @@ private:
      * @brief This is a callback method. It is called everytime a new message is
      * recieved.
      * 
-     * @param[in]   NONE
+     * @param[in]   std_msgs::msg::String::SharedPtr : Message recieved by the
+     * subscriber.
      * 
-     * @return  None
+     * @return  Void
      */
     void callback(const std_msgs::msg::String::SharedPtr msg);
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr Sub_;
